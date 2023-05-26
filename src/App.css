@@ -1,0 +1,64 @@
+body {
+    background-color: grey;
+    
+}
+
+.container {
+  margin: 0 auto;
+   width: 80%;
+  padding: 20px;
+  margin: 0 auto;
+  border: solid 1px white;
+  border-radius: 5px;
+  margin-top: 40px;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+}
+
+
+
+
+.weather-app {
+ background-color: rgb(255, 255, 255, 0.6);
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.search-section {
+  margin-top: px;
+
+}
+
+h1 {
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+
+.degree {
+  
+  font-size: 40px;
+  font-weight: 500;
+  margin-right: 5px;
+
+}
+
+.unit {
+  font-size: 18px;
+  margin-top: 10px;
+  text-decoration: none;
+}
+.units {
+  top: -15px;
+  position: relative;
+left: -5px;
+}
+
+li:first-letter {
+  text-transform: capitalize;
+}
+
