@@ -2,25 +2,31 @@ import React, { useState } from "react";
 import "./App.css";
 import axios from "axios";
 import WeatherInfo from "./WeatherInfo";
+import App from "./App";
 
 export default function Weather(props) {
   const [city, setCity] = useState(props.defaultCity);
   const [weatherData, setWeatherData] = useState({ ready: false });
   function handleResponse(response) {
+    console.log(response);
     setWeatherData({
       ready: true,
-      temperature: response.data.main.temp,
-      date: new Date(response.data.dt * 1000),
+      temperature: response.data.temperature.current,
+      date: new Date(response.data.time * 1000),
       wind: response.data.wind.speed,
-      humidity: response.data.main.humidity,
-      name: response.data.name,
-      description: response.data.weather[0].description,
+      humidity: response.data.temperature.humidity,
+      name: response.data.city,
+      description: response.data.condition.description,
     });
+      let backgroundPattern = response.data.condition.icon;
+    let background = document.getElementById("background");
+    background.className = "";
+    background.classList.add(backgroundPattern);
   }
 
   function search() {
-    const apiKey = "9eca7aac0b071aa16e3cb063adba0785";
-    let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+   const apiKey = `3do9a264fbe8b4ta0705174c4f40d76f`;
+   let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}`;
     axios.get(apiUrl).then(handleResponse);
   }
 

@@ -1,7 +1,90 @@
-body {
-    background-color: grey;
-    
+.scattered-clouds-day {
+  background-image: url(../images/scattered-clouds-day.gif);
 }
+
+.scattered-clouds-night {
+  background-image: url(../images/scattered-clouds-night.gif);
+}
+
+.mist-day {
+  background-image: url(../images/mist-day.gif);
+}
+
+.mist-night {
+  background-image: url(../images/mist-night.gif);
+}
+
+.snow-day {
+  background-image: url(../images/snow-day.gif);
+}
+
+.snow-night {
+  background-image: url(../images/snow-night.gif);
+}
+
+.thunderstorm-day {
+  background-image: url(../images/thunderstorm-day.gif);
+}
+
+.thunderstorm-night {
+  background-image: url(../images/thunderstorm-night.gif);
+}
+
+.rain-day {
+  background-image: url(../images/rain-day.gif);
+}
+
+.rain-night {
+  background-image: url(../images/rain-night.gif);
+}
+
+.shower-rain-day {
+  background-image: url(../images/shower-rain-day.gif);
+}
+
+.shower-rain-night {
+  background-image: url(../images/shower-rain-night.gif);
+}
+
+.broken-clouds-day {
+  background-image: url(../images/broken-clouds-day.gif);
+}
+
+.broken-clouds-night {
+  background-image: url(../images/broken-clouds-night.gif);
+}
+
+.few-clouds-day {
+  background-image: url(../images/few-clouds-day.gif);
+}
+
+.few-clouds-night {
+  background-image: url(../images/few-clouds-night.gif);
+}
+
+.clear-sky-day {
+  background-image: url(../images/clear-sky-day.gif);
+}
+
+.clear-sky-night {
+  background-image: url(../images/clear-sky-night.gif);
+}
+
+
+
+
+body {
+   
+    background-size: 20%;
+  background-repeat: repeat;
+  background-position: top left;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
 
 .container {
   margin: 0 auto;
