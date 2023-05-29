@@ -70,12 +70,8 @@
   background-image: url(../images/clear-sky-night.gif);
 }
 
-
-
-
 body {
-   
-    background-size: 20%;
+  background-size: 20%;
   background-repeat: repeat;
   background-position: top left;
   position: absolute;
@@ -85,10 +81,9 @@ body {
   height: 100%;
 }
 
-
 .container {
   margin: 0 auto;
-   width: 80%;
+  width: 80%;
   padding: 20px;
   margin: 0 auto;
   border: solid 1px white;
@@ -100,21 +95,16 @@ ul {
   list-style: none;
   margin: 0;
   padding: 0;
-
 }
 
-
-
-
 .weather-app {
- background-color: rgb(255, 255, 255, 0.6);
+  background-color: rgb(255, 255, 255, 0.6);
   padding: 20px;
   border-radius: 5px;
 }
 
 .search-section {
   margin-top: px;
-
 }
 
 h1 {
@@ -123,11 +113,9 @@ h1 {
 }
 
 .degree {
-  
   font-size: 40px;
   font-weight: 500;
   margin-right: 5px;
-
 }
 
 .unit {
@@ -138,10 +126,48 @@ h1 {
 .units {
   top: -15px;
   position: relative;
-left: -5px;
+  left: -5px;
 }
 
 li:first-letter {
   text-transform: capitalize;
 }
 
+@media only screen and (max-width: 900px) {
+
+  body {
+    font-size: 12px;
+  }
+
+  h1 {
+    font-size: 25px;
+  }
+
+.unit {
+  font-size: 12px;
+  font-weight: 500;
+
+}
+
+.units {
+   top: -5px;
+}
+
+  .degree {
+    font-size: 20px
+  }
+footer {
+  font-size: 10px;
+}
+
+.btn {
+  font-size: 12px;
+  margin: 0 auto;
+}
+
+.form-control {
+  font-size: 12px;
+  margin: 0 auto;
+}
+
+}
