@@ -6,10 +6,23 @@ function App() {
   return (
     <div className="App">
       <div className="container">
-        <Weather  defaultCity="Berlin" />
+        <Weather defaultCity="Berlin" />
         <footer>
-          Designed and <a href="/" target="_blank" rel="noreferrer"> coded </a> by{" "}
-          <a href="https://frabjous-croissant-f0cae0.netlify.app/" target="_blank" rel="noreferrer">
+          Designed and{" "}
+          <a
+            href="https://github.com/cmorgan-hm/final-weather-app-react"
+            target="_blank"
+            rel="noreferrer"
+          >
+            {" "}
+            coded{" "}
+          </a>{" "}
+          by{" "}
+          <a
+            href="https://frabjous-croissant-f0cae0.netlify.app/"
+            target="_blank"
+            rel="noreferrer"
+          >
             {" "}
             Hasti Maghsoodi
           </a>
