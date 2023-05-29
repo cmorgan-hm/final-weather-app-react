@@ -17,25 +17,27 @@ export default function Temperature(props) {
 
     if (unit === "celsius") {
             return (
-      <div>
-        {" "}
-        <span id="degree" className="degree">
-          {" "}
-          {Math.round(props.celsius)}
-        </span>
-        <span id="unit" className="units">
-          {" "}
-          <span className="unit">
-            °C</span>
-          {" "}
-          |{" "}
-          <a href="#" id="fahrenheit" className="unit" onClick={showFahrenheit}>
-            {" "}
-            °F
-          </a>
-        </span>
-      </div>
-    );
+              <div>
+                {" "}
+                <span id="degree" className="degree">
+                  {" "}
+                  {Math.round(props.celsius)}
+                </span>
+                <span id="unit" className="units">
+                  {" "}
+                  <span className="unit">°C</span> |{" "}
+                  <a
+                    href="javascript:void(0)"
+                    id="fahrenheit"
+                    className="unit"
+                    onClick={showFahrenheit}
+                  >
+                    {" "}
+                    °F
+                  </a>
+                </span>
+              </div>
+            );
     } else {
          return (
            <div>
@@ -46,7 +48,14 @@ export default function Temperature(props) {
              </span>
              <span id="unit" className="units">
                {" "}
-               <a href="#" className="unit" onClick={showCelsius}>°C</a> |{" "}
+               <a
+                 href="javascript:void(0)"
+                 className="unit"
+                 onClick={showCelsius}
+               >
+                 °C
+               </a>{" "}
+               |{" "}
                <span id="fahrenheit" className="unit">
                  {" "}
                  °F
