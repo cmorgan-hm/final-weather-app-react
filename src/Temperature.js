@@ -27,7 +27,7 @@ export default function Temperature(props) {
                   {" "}
                   <span className="unit">°C</span> |{" "}
                   <button
-                    href="javascript:void(0)"
+                    
                     id="fahrenheit"
                     className="unit active"
                     onClick={showFahrenheit}
@@ -49,7 +49,7 @@ export default function Temperature(props) {
              <span id="unit" className="units">
                {" "}
                <button
-                 href="javascript:void(0)"
+                 
                  className="unit active"
                  onClick={showCelsius}
                >
