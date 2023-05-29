@@ -26,15 +26,15 @@ export default function Temperature(props) {
                 <span id="unit" className="units">
                   {" "}
                   <span className="unit">°C</span> |{" "}
-                  <a
+                  <button
                     href="javascript:void(0)"
                     id="fahrenheit"
-                    className="unit"
+                    className="unit active"
                     onClick={showFahrenheit}
                   >
                     {" "}
                     °F
-                  </a>
+                  </button>
                 </span>
               </div>
             );
@@ -48,13 +48,13 @@ export default function Temperature(props) {
              </span>
              <span id="unit" className="units">
                {" "}
-               <a
+               <button
                  href="javascript:void(0)"
-                 className="unit"
+                 className="unit active"
                  onClick={showCelsius}
                >
                  °C
-               </a>{" "}
+               </button>{" "}
                |{" "}
                <span id="fahrenheit" className="unit">
                  {" "}
