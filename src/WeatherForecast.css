@@ -7,3 +7,7 @@
   text-align: center;
 }
 
+.forecast-day,
+.forecast-max {
+    font-weight: bold;
+}
