@@ -8,6 +8,7 @@ import WeatherForecast from "./WeatherForecast";
 export default function Weather(props) {
   const [city, setCity] = useState(props.defaultCity);
   const [weatherData, setWeatherData] = useState({ ready: false });
+
   function handleResponse(response) {
     setWeatherData({
       ready: true,
@@ -65,7 +66,7 @@ export default function Weather(props) {
           <WeatherInfo data={weatherData} />
 
         </div>
-        <WeatherForecast city={city}/>
+        <WeatherForecast city={weatherData.name}/>
       </div>
     );
   } else {
